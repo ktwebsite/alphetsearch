@@ -16,11 +16,6 @@
             url('../fonts/menlo-regular-webfont.woff2') format('woff2');
 }
 
-#page{
-    --button-color-black: #000;
-    --button-color-red: #ff0000;
-}
-
 ::-webkit-scrollbar {
     width: 5px;
     border-radius: 5px;
@@ -33,7 +28,12 @@
 
 h1,h2,h3,h4,h5,h6,p,span,li,a,button,input,textarea,label,select,option,form{
     margin: 0;
-    font-family: "Whitney", "Whitney Bold", Arial, Helvetica, sans-serif;
+    font-family: "Whitney Bold", Arial, Helvetica, sans-serif;
+}
+
+p,span,li,a,button,input,textarea,label,select,option,form{
+    margin: 0;
+    font-family: "Whitney", Arial, Helvetica, sans-serif;
 }
 
 a{
@@ -47,6 +47,7 @@ a:hover{
 input{
     border: none;
     background: transparent;
+    outline: none;
 }
 
 button{
@@ -63,6 +64,10 @@ code {
 
 svg{
     background-color: transparent;
+}
+
+img{
+    user-select: none;
 }
 
 .black-screen-alpha{
@@ -230,7 +235,6 @@ svg{
 
 .input-search{
     background-color: transparent;
-    width: 100%;
     padding: 10px;
     display: flex;
     transition: width ease 0.2s, opacity ease 0.4s;
@@ -377,7 +381,7 @@ svg{
 
 .content{
     position: fixed;
-    top: 100px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;

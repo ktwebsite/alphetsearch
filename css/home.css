@@ -1,92 +1,75 @@
 .content-background{
-    background:linear-gradient(80deg,rgb(0, 0, 0),rgb(0, 39, 61));
-    width: 100%;
-    overflow-y: scroll;
+    background-image: url("../img/IMG_3079.jpg");
+    background-size: cover;
 }
 
-.introduce{
-    padding: 50px;
-    color: white;
-    position: relative;
-    animation: showUp 1s;
-}
-
-@keyframes showUp{
-    0%{
-        opacity: 0;
-        right: 30px;
-    }
-    100%{
-        opacity: 1;
-        right: 0;
-    }
-}
-
-span.title{
-    font-size: 50px;
-    font-family: "Whitney Bold";
-}
-
-p.title{
-    font-size: 50px;
-    font-family: "Whitney Bold";
-}
-
-p.description{
-    margin-top: 15px;
-    font-size: 20px;
-    font-family: "Whitney";
-    margin-block-end: 20px;
-}
-
-.button_goback{
-    background-color: transparent;
-    border: 3px solid white;
-    padding: 10px 20px;
-    color: white;
-    font-family: "Whitney";
-    transition: ease .2s;
-}
-
-.button_goback:hover{
-    background-color: white;
-    color: black;
-}
-
-.ktmuzik,.ktmuzik-plus,.ktfilm,.chill-music{
-    font-family: "Whitney";
+.content-wrapper{
     display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 50px;
-    color: white;
-    justify-content: space-between;
-    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
-.button_tryit{
-    background-color: transparent;
-    border: 3px solid white;
-    padding: 10px 20px;
-    color: white;
-    font-family: "Whitney";
-    width: 110px;
+img{
+    margin-block-start: 15px;
+    margin-block-end: 15px;
     transition: ease .2s;
 }
 
-.button_tryit:hover{
-    background-color: white;
-    color: black;
+img:hover{
+    filter: brightness(1.5);
 }
 
-@media screen and (max-width: 800px){
-    .introduce, .ktmuzik, .ktmuzik-plus, .ktfilm, .chill-music{
-        flex-direction: column;
-        align-items: center;
-    }
+a{
+    color: rgb(163, 0, 208);
+    margin-right: 3px;
+}
 
-    .ktmuzik > div, .ktmuzik-plus > div, .ktfilm > div, .chill-music > div{
-        text-align: center;
-        align-items: center;
-        margin-bottom: 35px;
-    }
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p.introduction{
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    font-size: 35px;
+    font-family: "Whitney Bold";
+}
+
+input{
+    width: 300px;
+}
+
+.keyword{
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    font-size: 12px;
+    display: flex;
+}
+
+.description{
+    color: grey;
+    margin-right: 3px;
+}
+
+.alphetsearch-input{
+    padding: 10px 7px;
+    border: rgb(163, 0, 208) 1px solid;
+    margin-block-start: 20px;
+    margin-block-end: 20px;
+    outline: none;
+    transition: ease .1s;
+    display: flex;
+}
+
+.alphetsearch-input:hover{
+    border: rgb(215, 68, 255) 1px solid;
+}
+
+.alphetsearch-input::placeholder{
+    color: rgb(160, 160, 160);
 }
