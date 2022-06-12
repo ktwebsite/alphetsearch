@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
+    <meta name="description" content="KTWebsite">
+    <title>Home</title>
+    <link rel="shortcut icon" href="./img/ktwebsite_plus.JPG" type="image/x-icon">
+    <noscript>
+        You need to enable JavaScript to display this page!
+    </noscript>
+    <link rel="stylesheet" type="text/css" href="./css/all.css">
+    <link rel="stylesheet" type="text/css" href="./css/home.css">
+</head>
+<body id="body">
+    <div id="page">
+        <div class="content content-background content-wrapper">
+            <img src="./img/IMG_3072.PNG" alt="ktwebsite_search" width="67" height="80">
+            <div class="search">
+                <p class="introduction">Welcome to AlphetSearch</p>
+                <div class="keyword">
+                    <p class="description">Try searching for a keyword like: </p>
+                    <a href="./search.php?query=ktmuzik" target="_parent" class="keyword-link">ktmuzik</a>
+                    <a href="./search.php?query=ktmuzik%2B" class="keyword-link">ktmuzik+</a>
+                    <a href="./search.php?query=ktfilm" class="keyword-link">ktfilm</a>
+                </div>
+                <form action="./search.php" method="get">
+                    <div class="alphetsearch-input">
+                        <input type="text" name="query" placeholder="Search for a keyword...">
+                        <div class="input-delete-i-box">
+                            <svg viewBox="0 0 24 24" width="20" height="20" class="input-delete-i" id="inputdelete">
+                                <path d="M12.7,12l6.6,6.6l-0.7,0.7L12,12.7l-6.6,6.6l-0.7-0.7l6.6-6.6L4.6,5.4l0.7-0.7l6.6,6.6l6.6-6.6l0.7,0.7L12.7,12z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./js/all.js"></script>
+</html>

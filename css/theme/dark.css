@@ -1,0 +1,59 @@
+/* All */
+
+a{
+    color: #fff !important;
+}
+
+input{
+    color: #fff;
+}
+
+.Header,.footer,.music-box,.speed-panel-box,.Selection-box-responsive{
+    background-color: #1a1a1a;
+    color: #fff;
+    fill: #fff;
+}
+
+.speed-value:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+.volume-panel-box,.box-responsive,.dislike-response-box{
+    background-color: #1a1a1a;
+    color: #fff;
+    fill: #fff;
+}
+.content{
+    color: #fff;
+    fill: #fff;
+}
+.content-background{
+    background-color: #1a1a1a;
+}
+.seekslider::-webkit-slider-thumb,.volume-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.seekslider::-moz-range-thumb,.volume-range::-moz-range-thumb {
+    width: 14px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+[type="checkbox"]{
+    background-color: #1a1a1a;
+}
+
+@media screen and (max-width: 800px){
+    .profile-name{
+        color: white;
+    }
+}
